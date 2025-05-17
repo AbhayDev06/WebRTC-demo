@@ -27,6 +27,10 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => {
+  res.send("Server is running");
+});
+
 const users = {};
 
 // Socket.IO Connection Handler
